@@ -1,0 +1,32 @@
+doctype html
+html
+  include inc/head.jade
+  body()
+
+    form
+      b Ваше имя:
+      br
+      p
+        input.name#name(name='firstname', type='text')
+        .button
+          | Играть
+  
+  
+    .title
+    .score
+      | 0
+    .chat
+      .content
+      textarea.comment(placeholder='Ваше сообщение')
+      .post
+    #count 0
+    
+    .lives lives:3
+    
+    #honey()
+      img(src='images/honey.png')
+    
+    #bee
+      // img(src='/images/bee.png')
+    
+    

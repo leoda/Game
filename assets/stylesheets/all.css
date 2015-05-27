@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* line 3, /home/ubuntu/workspace/project/source/stylesheets/all.scss */
+/*body {*/
+/*  background: url(/images/3.jpg) no-repeat center top;*/
+/*  font-family: sans-serif; */
+/*  background-size: cover;*/
+/*  position:fixed;*/
+/*  background-color: #67E300;*/
+/*  height: 100vh;*/
+/*  width: 100%;*/
+/*}*/
+  
+/* line 7, /home/ubuntu/workspace/project/source/stylesheets/all.scss */
+/*form {*/
+/*  margin-top: 100px;*/
+/*  text-align: center; }*/
+
+/* line 12, /home/ubuntu/workspace/project/source/stylesheets/all.scss */
+/*input {*/
+/*  width: 200px;*/
+/*  height: 30px; }*/
+
+/* line 16, /home/ubuntu/workspace/project/source/stylesheets/all.scss */
+/*.button {*/
+/*  background: #FFF;*/
+/*  width: 200px;*/
+/*  height: 30px;*/
+/*  display: inline-block;*/
+/*  cursor: pointer;*/
+/*  padding-top: 10px;*/
+/*}*/
+
+/* line 24, /home/ubuntu/workspace/project/source/stylesheets/all.scss */
+/*.bee {*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  opacity: 0;*/
+/*  width: 160px;*/
+/*  height: 125px;*/
+/*  background: url(/images/bee.png) no-repeat;*/
+/*  z-index:1000;*/
+
+/*}*/
+
+/*.chat{*/
+/*position: fixed;*/
+/*top:0;*/
+/*right:0;*/
+/*height: 300px;*/
+/*width: 300px;*/
+/*background: #000;*/
+/*opacity:0;*/
+/*z-index:-1000;*/
+/*}*/
+/*.content{*/
+/*position: absolute;*/
+/*width:300px;*/
+/*height: 250px;*/
+/*background:#FFF;*/
+/*padding-left:20px;*/
+/*padding-top:20px;*/
+/*overflow: scroll;*/
+/*}*/
+/*.content p{*/
+/*display:inline;*/
+/*}*/
+/*.comment{*/
+/*position: absolute;*/
+/*width:260px;*/
+/*height:60px;*/
+/*bottom:0;*/
+/*resize: none;*/
+/*border:0;*/
+/*background:#FFC573;*/
+
+/*}*/
+/*.post{*/
+/*position: absolute;*/
+/*width:50px;*/
+/*height:64px;*/
+/*bottom:0;*/
+/*right:0;*/
+/*border: 0;*/
+/*background:#FF9500;*/
+/*cursor: pointer;*/
+
+/*}*/
+
+
+
+
+body{
+    overflow-x:hidden;
+    background: url(/images/3.jpg) no-repeat center top;
+    font-family: sans-serif; 
+    background-size: cover;
+    position:fixed;
+    background-color: #67E300;
+    height: 100vh;
+    width: 100%;
+} 
+
+form{
+    margin-top: 100px;
+    text-align: center; 
+}
+.name{
+    width: 200px;
+    height: 30px;
+}
+.button{
+    background: #FFF;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.bee{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 160px;
+    height: 125px;
+    background: url(/images/bee.png) no-repeat;
+    z-index:1000;
+}
+.chat{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 300px;
+    width: 300px;
+    background: #000;
+    opacity:0;
+    z-index:-1000;
+
+}
+.content{
+    position: absolute;
+    width:300px;
+    height: 250px;
+    background:#FFF;
+    padding-left:20px;
+    padding-top:20px;
+    overflow: scroll;
+}
+.content p{
+    display:inline;
+}
+.content b{
+    color: #2d4b55;
+    display:inline;
+}
+.comment{
+    position: absolute;
+    width:260px;
+    height:60px;
+    bottom:0;
+    resize: none;
+    border:0;
+    background:#FFC573;
+}
+.post{
+    position: absolute;
+    width:50px;
+    height:64px;
+    bottom:0;
+    right:0;
+    border: 0;
+    background:#FF9500;
+    cursor: pointer;
+}
+#honey{
+	position:absolute;
+}
+#bee{
+	position:absolute;
+}
+#count{
+	color:red;
+	font-size:30px;
+	font-weight:bold;
+}
+.lives{
+	/*padding-left: 100px;*/
+	color:red;
+	font-size:30px;
+	font-weight:bold;
+	display: inline-block;
+}
