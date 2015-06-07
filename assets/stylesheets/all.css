@@ -1,193 +1,151 @@
 @charset "UTF-8";
-/* line 3, /home/ubuntu/workspace/project/source/stylesheets/all.scss */
-/*body {*/
-/*  background: url(/images/3.jpg) no-repeat center top;*/
-/*  font-family: sans-serif; */
-/*  background-size: cover;*/
-/*  position:fixed;*/
-/*  background-color: #67E300;*/
-/*  height: 100vh;*/
-/*  width: 100%;*/
-/*}*/
+html, body {
+height: 100%;
+}
+body {
+  /*background: url(/images/3.jpg) no-repeat center top;*/
+  margin:0;
+  padding:0;
+  font-family: sans-serif; 
+  background-size: cover;
+  position:fixed;
+  background-color: #67E300;
+  height: 100vh;
+  width: 100%;
+  padding-right:10px;
+}
   
-/* line 7, /home/ubuntu/workspace/project/source/stylesheets/all.scss */
-/*form {*/
-/*  margin-top: 100px;*/
-/*  text-align: center; }*/
-
-/* line 12, /home/ubuntu/workspace/project/source/stylesheets/all.scss */
-/*input {*/
-/*  width: 200px;*/
-/*  height: 30px; }*/
-
-/* line 16, /home/ubuntu/workspace/project/source/stylesheets/all.scss */
-/*.button {*/
-/*  background: #FFF;*/
-/*  width: 200px;*/
-/*  height: 30px;*/
-/*  display: inline-block;*/
-/*  cursor: pointer;*/
-/*  padding-top: 10px;*/
-/*}*/
-
-/* line 24, /home/ubuntu/workspace/project/source/stylesheets/all.scss */
-/*.bee {*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  opacity: 0;*/
-/*  width: 160px;*/
-/*  height: 125px;*/
-/*  background: url(/images/bee.png) no-repeat;*/
-/*  z-index:1000;*/
-
-/*}*/
-
-/*.chat{*/
-/*position: fixed;*/
-/*top:0;*/
-/*right:0;*/
-/*height: 300px;*/
-/*width: 300px;*/
-/*background: #000;*/
-/*opacity:0;*/
-/*z-index:-1000;*/
-/*}*/
-/*.content{*/
-/*position: absolute;*/
-/*width:300px;*/
-/*height: 250px;*/
-/*background:#FFF;*/
-/*padding-left:20px;*/
-/*padding-top:20px;*/
-/*overflow: scroll;*/
-/*}*/
-/*.content p{*/
-/*display:inline;*/
-/*}*/
-/*.comment{*/
-/*position: absolute;*/
-/*width:260px;*/
-/*height:60px;*/
-/*bottom:0;*/
-/*resize: none;*/
-/*border:0;*/
-/*background:#FFC573;*/
-
-/*}*/
-/*.post{*/
-/*position: absolute;*/
-/*width:50px;*/
-/*height:64px;*/
-/*bottom:0;*/
-/*right:0;*/
-/*border: 0;*/
-/*background:#FF9500;*/
-/*cursor: pointer;*/
-
-/*}*/
+form {
+  margin-top: 100px;
+  text-align: center; }
 
 
+input {
+  width: 200px;
+  height: 30px; }
 
 
-body{
-    overflow-x:hidden;
-    background: url(/images/3.jpg) no-repeat center top;
-    font-family: sans-serif; 
-    background-size: cover;
-    position:fixed;
-    background-color: #67E300;
-    height: 100vh;
-    width: 100%;
-} 
-
-form{
-    margin-top: 100px;
-    text-align: center; 
+.button {
+  background: #FFF;
+  width: 200px;
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 10px;
 }
-.name{
-    width: 200px;
-    height: 30px;
+
+.bee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  width: 160px;
+  height: 125px;
+  background: url(/images/bee.png) no-repeat;
+  z-index:1000;
+
 }
-.button{
-    background: #FFF;
-    width: 200px;
-    height: 30px;
-    display: inline-block;
-    cursor: pointer;
-    padding-top: 10px;
-}
-.bee{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    width: 160px;
-    height: 125px;
-    background: url(/images/bee.png) no-repeat;
-    z-index:1000;
-}
+
 .chat{
-    position: fixed;
-    top:0;
-    right:0;
-    height: 300px;
-    width: 300px;
-    background: #000;
-    opacity:0;
-    z-index:-1000;
-
+position: fixed;
+bottom:0;
+right:0;
+height: 300px;
+width: 300px;
+background: #000;
+opacity:0;
+z-index:-1000;
 }
 .content{
-    position: absolute;
-    width:300px;
-    height: 250px;
-    background:#FFF;
-    padding-left:20px;
-    padding-top:20px;
-    overflow: scroll;
+position: absolute;
+width:300px;
+height: 250px;
+background:#FFF;
+overflow-y: scroll;
+overflow-x: hidden;
+padding: 20px;
 }
 .content p{
-    display:inline;
-}
-.content b{
-    color: #2d4b55;
-    display:inline;
+display:inline;
 }
 .comment{
-    position: absolute;
-    width:260px;
-    height:60px;
-    bottom:0;
-    resize: none;
-    border:0;
-    background:#FFC573;
+position: absolute;
+width:246px;
+height:60px;
+bottom:0;
+resize: none;
+border:0;
+background:#FFC573;
+
 }
 .post{
+position: absolute;
+width:50px;
+height:64px;
+bottom:0;
+right:0;
+border: 0;
+background:#FF9500;
+cursor: pointer;
+
+}
+
+/*.menu{*/
+/*  position:absolute;*/
+/*  width:300px;*/
+/*  height:300px;*/
+/*  background-color:#A600A6;*/
+/*}*/
+
+.menu {
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  background: #00B945; 
+  color: #fff; 
+  padding: 10px; 
+  width: 100px;
+  opacity:0;
+}
+.menu input, .menu p {
+  margin: 0px 0px 5px 0px; 
+  padding: 5px 5px; 
+  background: #FF5600; 
+  border: 1px solid #FF5600; 
+  text-transform: uppercase; 
+  width: 100px; 
+  display: block;
+  color: #fff;
+  }
+.menu p {
+  width: 88px; 
+}
+.menu input:hover {
+  border: 1px solid #FF9000; 
+  background: #FF9000;
+}
+
+#square {
+    width: 50px;
+    /*height: 50px;*/
+    background: red;
+    animation: bobble 3s linear infinite;
+}
+
+.square {
     position: absolute;
-    width:50px;
-    height:64px;
-    bottom:0;
-    right:0;
-    border: 0;
-    background:#FF9500;
-    cursor: pointer;
+    height:100%;
+    /*top:100px;*/
+    animation: bobble 3s linear infinite;
+
 }
-#honey{
-	position:absolute;
-}
-#bee{
-	position:absolute;
-}
-#count{
-	color:red;
-	font-size:30px;
-	font-weight:bold;
-}
-.lives{
-	/*padding-left: 100px;*/
-	color:red;
-	font-size:30px;
-	font-weight:bold;
-	display: inline-block;
+
+@keyframes bobble {
+
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(100%);
+    }   
 }
