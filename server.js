@@ -66,10 +66,20 @@ io.on("connection", function(socket){
         // console.log("получил сообщение");
         socket.broadcast.emit('message for all', createNewMessage);
         // console.log("отправил сообщение");
+    });
+    
+    socket.on('Click', function(del){
+        io.sockets.emit('Delete',del);
+        socket.broadcast.emit('minusOne')
     })
-   
+    
+    socket.on('lose', function(loser){
+        socket.emit('youLose');
+        socket.broadcast.emit('heLose',loser);
+    })
+    
     socket.on('disconnect', function() {
-        console.log('bye my user!')
+        console.log('bye my user!');
         // console.log(gamers.indexOf(socket.id));
         // console.log(gamers);
         for(var i=0;i<gamers.length;i++){
@@ -82,7 +92,18 @@ io.on("connection", function(socket){
         }
     });
     
-})
+});
+
+setInterval(function(){
+    var randSq = Math.floor((Math.random() * 3) + 1);//1-3
+    var leftSq = Math.floor((Math.random() * 30) + 10)+'%';
+    var rletter = Math.floor(Math.random() * 26);
+    var randOb = {};
+    randOb.forBox = randSq;
+    randOb.forLeft = leftSq;
+    randOb.forLetter = rletter;
+    io.sockets.emit('smth',randOb);
+}, 1500);
 
 
 

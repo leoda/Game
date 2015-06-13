@@ -107,8 +107,9 @@ cursor: pointer;
   width: 100px;
   opacity:0;
 }
-.menu input, .menu p {
-  margin: 0px 0px 5px 0px; 
+.menu input,.menu p{
+  /*margin: 0px 0px 5px 0px; */
+  margin-bottom:10px;
   padding: 5px 5px; 
   background: #FF5600; 
   border: 1px solid #FF5600; 
@@ -116,8 +117,26 @@ cursor: pointer;
   width: 100px; 
   display: block;
   color: #fff;
+  text-align:center;
   }
-.menu p {
+/*.menu img {*/
+/*  background-image: url(/images/heart.png);*/
+/*}*/
+  
+.bg {
+  background: #FF5600; 
+  text-align:center;
+  padding:6px 0 6px 0;
+}
+/*.menu span2 {*/
+  /*background: #FF5600; */
+  /*margin-top:20px;*/
+/*  padding:5px 63px 5px 0px;*/
+/*}*/
+
+.menu p{
+  margin-top:10px;
+  margin-bottom:10px;
   width: 88px; 
 }
 .menu input:hover {
@@ -125,27 +144,174 @@ cursor: pointer;
   background: #FF9000;
 }
 
-#square {
-    width: 50px;
-    /*height: 50px;*/
-    background: red;
-    animation: bobble 3s linear infinite;
+.mainContent1{
+  height: 100vh;
+  width: 100%;
+  top:0;
+  position: absolute;
+  /*background-color:#999;*/
+  /*-webkit-animation: fall 20s linear both;*/
+}
+.square1 {
+  width: 60px;
+  height: 60px;
+  background: red;
+  -webkit-transform: translateY(0vh);
+  -webkit-animation: fall 10s linear both;
+  position: absolute;
 }
 
-.square {
-    position: absolute;
-    height:100%;
-    /*top:100px;*/
-    animation: bobble 3s linear infinite;
+@-webkit-keyframes fall {
+
+  0% {
+    -webkit-transform: translateY(0vh);
+  }
+  100% {
+    -webkit-transform: translateY(100vh);
+  } 
+}
+/*@keyframes fall2 {*/
+
+/*  0% {*/
+/*    -webkit-transform: translateY(-100%);*/
+/*  }*/
+/*  100% {*/
+/*    -webkit-transform: translateY(0%);*/
+/*  } */
+/*}*/
+
+.mainContent2{
+  height: 100vh;
+  width: 100%;
+  top:0;
+  position: absolute;
+  /*background-color:#A78992;*/
+  /*-webkit-animation: fall3 20s linear both;*/
 
 }
 
-@keyframes bobble {
+.square2 {
+  width: 60px;
+  height: 60px;
+  background: green;
+  position: absolute;
+  /*top:100px;*/
+  -webkit-transform: translateY(0vh);
+  -webkit-animation: fall3 10s linear both;
+  /*animation: bobble 3s linear infinite;*/
+}
 
-    0% {
-        -webkit-transform: translateY(-100%);
-    }
-    100% {
-        -webkit-transform: translateY(100%);
-    }   
+@-webkit-keyframes fall3 {
+
+0% {
+      left:500px;
+      -webkit-transform: translateY(0vh);
+}
+
+25%{
+      left:300px;
+      -webkit-transform: translateY(25vh);
+}
+
+50%{
+      left:500px;
+      -webkit-transform: translateY(50vh);
+}
+75%{
+      left:300px;
+      -webkit-transform: translateY(75vh);
+}
+100% {
+      left:500px;
+     -webkit-transform: translateY(100vh);
+} 
+}
+
+.mainContent3{
+  height: 100vh;
+  width: 100%;
+  top:0;
+  position: absolute;
+  /*background-color:#A78992;*/
+  /*-webkit-animation: fall4 30s linear both;*/
+  /*animation:rotate 3s linear infinite;*/
+}
+
+.square3 {
+  width: 60px;
+  height: 60px;
+  background: blue;
+  position: absolute;
+  -webkit-transform: translateY(0vh);
+  -webkit-animation: fall4 10s linear both;
+  /*margin-top:180px; */
+  /*animation: bobble 3s linear infinite;*/
+}
+
+
+@-webkit-keyframes fall4 {
+
+0% {  
+      left:300px;
+      -webkit-transform: translateY(0vh);
+}
+
+25% {  
+      left:150px;
+      -webkit-transform: translateY(25vh);
+}
+
+50%{  
+      left:300px;
+      -webkit-transform: translateY(50vh);
+}
+75% {  
+      left:150px;
+      -webkit-transform: translateY(75vh);
+}
+100% {
+      
+      left:300px;
+     -webkit-transform: translateY(100vh);
+} 
+}
+
+.letterstyle{
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold; 
+  text-align: center; 
+  line-height: 50px; 
+  vertical-align: middle;
+}
+
+
+
+.end{
+  width:100%;
+  height: 100vh;
+  background-color: #182429;
+  z-index:10000;
+  position:fixed;
+  font-size:150px;
+  top:-200vh;
+  color:#ffe36e;
+  padding-top: 20%;
+  text-align: center;
+  opacity:0;
+}
+.restart{
+  position: fixed;
+  width: 100px;
+  height:30px;
+  top: -500px;
+  left:100px;
+  padding:20px;
+  z-index:100000;
+  background-color:#ffe36e;
+}
+.restart a{
+  font-size:30px;
+  color: black;
+  text-decoration: none;
 }

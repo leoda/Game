@@ -18,13 +18,23 @@ html
       
     
     .menu
-      input.play_pause(type='button', value='Play/Pause')
-      input.stop(type='button', value='Stop')
-      p.lifes 10
-      p.points 0
+      input.play_pause(type='button', value='Play')
+      // input.stop(type='button', value='Stop')
+      .bg
+        span ♥ 
+        span.lifes 3
+      p.points#points 
+        | 0
+    .end    
+    .restart
+      a(href='http://js-leoda.c9.io/') Restart
     
-    #mainContent
-      img#square.square
+    // .mainContent1
+    //   .square1
+    // .mainContent2
+    //   .square2
+    // .mainContent3
+    //   .square3  
     
     
     // #honey()
